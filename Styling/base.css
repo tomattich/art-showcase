@@ -9,5 +9,6 @@
     line-height: 1.5;
     color: white;
 }
-
-
+main > section {
+    min-height: 100vh;
+}
