@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../images/showcase1.jpg") center center/cover no-repeat;
+    background: url("../images/showcase1.jpg") center no-repeat;
     &::before {
         content: "";
         position: absolute;
@@ -99,21 +99,21 @@
 .aboutContainerImage {
     z-index: 1;
     img {
-        height: 70dvh;
+        height: 70vh;
     }
     @media (max-width: 800px) and (orientation: portrait) {
         img {
-            height: 70dvh;
+            height: 70vh;
         }
     }
     @media (max-width: 768px) and (orientation: portrait) {
         img {
-            height: 60dvh;
+            height: 60vh;
         }
     }
     @media (max-width: 320px) and (orientation: portrait) {
         img {
-            height: 50dvh;
+            height: 50vh;
         }
     }
 }
