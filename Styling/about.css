@@ -76,9 +76,6 @@
         h2 {
             font-size: 2rem;
         }
-        p {
-            font-size: .75rem;
-        }
     }
     
 }
@@ -93,20 +90,36 @@
         flex-direction: column;
         gap: 2rem;
     }
-}
 
+}
+.aboutContainerText {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 1rem;
+    @media (max-width: 800px) and (orientation: portrait) {
+        text-align: center;
+        width: 70%;
+    }
+}
 .aboutContainerImage {
     z-index: 1;
     img {
-        width: 80%;
+        height: 70dvh;
     }
     @media (max-width: 800px) and (orientation: portrait) {
-        width: 100%;
+        img {
+            height: 70dvh;
+        }
     }
     @media (max-width: 768px) and (orientation: portrait) {
-        width: 80%;
+        img {
+            height: 60dvh;
+        }
     }
     @media (max-width: 320px) and (orientation: portrait) {
-        width: 90%;
+        img {
+            height: 50dvh;
+        }
     }
 }
