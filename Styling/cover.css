@@ -16,7 +16,7 @@
         background-color: rgba(0, 0, 0, .4);
         filter: blur(1rem);
     }
-    @media (max-width: 800px) and (orientation: portrait) {
+    @media (max-width: 1080px) and (orientation: portrait) {
         background: url("../images/cover-phone.jpg") center center/cover no-repeat;
         .coverText {
             h2 {
@@ -103,7 +103,7 @@
             z-index: -1;
         }
     }
-    @media (max-width: 800px) and (orientation: portrait) {
+    @media (max-width: 1080px) and (orientation: portrait) {
         text-align: center;
         gap: 5rem;
     }
