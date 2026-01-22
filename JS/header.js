@@ -13,7 +13,7 @@ export function header(){
             <hr class="underline">
         </div>
         <div class="navBtnCont">
-            <button>FEATURED WORKS</button>
+            <button>WORKS</button>
             <hr class="underline">
         </div>
     </nav>`
