@@ -66,15 +66,10 @@
     }
     @media (max-width: 800px) and (orientation: portrait) {
         h2 {
-            font-size: 3rem;
+            font-size: 2rem;
         }
         p {
             font-size: .75rem;
-        }
-    }
-    @media (max-width: 320px) and (orientation: portrait) {
-        h2 {
-            font-size: 2rem;
         }
     }
     
