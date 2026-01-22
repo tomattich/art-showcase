@@ -1,6 +1,6 @@
 .about {
 
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
     &::before {
         content: "";
         position: absolute;
-        top: 100dvh;
+        top: 100vh;
         left: 0;
         right: 0;
         bottom: 0;
