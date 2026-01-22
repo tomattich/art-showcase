@@ -101,21 +101,21 @@
 .aboutContainerImage {
     z-index: 1;
     img {
-        height: 70vh;
+        width: 40vw;
     }
     @media (max-width: 1080px) and (orientation: portrait) {
         img {
-            height: 70vh;
+            width: 70vw;
         }
     }
     @media (max-width: 768px) and (orientation: portrait) {
         img {
-            height: 60vh;
+            width: 70vw;
         }
     }
     @media (max-width: 320px) and (orientation: portrait) {
         img {
-            height: 50vh;
+            width: 70vw;
         }
     }
 }
