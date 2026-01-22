@@ -1,0 +1,57 @@
+header {
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    
+    @media (max-width: 800px) and (orientation: portrait) {
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        button {
+            font-size: 5dvw;
+        }
+    }
+}
+
+.underline {
+    margin-top: .2rem;
+    height: .1rem;
+    width: 0; 
+    background-color: white;
+    border: 0;
+    transition: all 0.3s ease-in-out;
+    animation: renderLeftLine .3s ease-in-out;
+}
+
+nav {
+    display: flex;
+    gap: 3rem;
+    button {
+        color: white;
+
+    }
+    div button:hover + .underline {
+    width: 100%;
+    animation: renderLeftLine .3s ease-in-out;
+    filter: drop-shadow(0 0 .2rem white);
+    
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        display: none;
+    }
+}
+
+.name {
+    position: absolute;
+    font-size: 1.1rem;
+    top: 1.9dvh;
+    left: 5dvw;
+    color: white;
+    @media (max-width: 800px) and (orientation: portrait) {
+        font-size: 5dvw;
+    }
+}

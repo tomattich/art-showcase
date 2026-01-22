@@ -1,0 +1,112 @@
+.about {
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/images/showcase1.jpg") center center/cover no-repeat;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.634);
+        backdrop-filter: blur(.5rem);
+    }
+    h2 {
+        font-size: 4rem;
+        transition: all .3s ease-in-out;
+            cursor: default;
+            background: url("/images/text-bg2.png") center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+            filter: hue-rotate(0deg);
+            &::after {
+                content: "About me !";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url("/images/text-bg2.png") center;
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                filter: blur(.5rem) brightness(1.5);
+                z-index: -1;
+            }
+    }
+    p {
+        font-size: 2rem;
+        transition: all .3s ease-in-out;
+        cursor: default;
+        z-index: 1;
+        position: relative;
+        filter: hue-rotate(0deg);
+        &::after {
+            content: "Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create piece on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("/images/text-bg2.png") center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: blur(.5rem) brightness(1.5);
+            z-index: -1;
+        }
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        h2 {
+            font-size: 3rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: .75rem;
+        }
+    }
+    
+}
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    @media (max-width: 800px) and (orientation: portrait) {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.aboutContainerImage {
+    z-index: 1;
+    img {
+        width: 80%;
+    }
+    @media (max-width: 800px) and (orientation: portrait) {
+        width: 100%;
+    }
+    @media (max-width: 768px) and (orientation: portrait) {
+        width: 80%;
+    }
+    @media (max-width: 320px) and (orientation: portrait) {
+        width: 90%;
+    }
+}
