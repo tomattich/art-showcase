@@ -8,7 +8,7 @@ export function about() {
             <p>Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.</p>
         </div>
         <div class="aboutContainerImage">
-            <img src="images/showcase1.jpg" alt="">
+            <img src="/images/showcase1.jpg" alt="">
         </div>
     </div>
     `
