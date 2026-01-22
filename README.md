@@ -1,2 +1,2 @@
 # art-showcase
-a fairly nice looking page for my art 
+a fairly nice looking page for my art (in progress)
