@@ -12,3 +12,15 @@
 main > section {
     min-height: 100vh;
 }
+::-webkit-scrollbar {
+    width: .2rem;
+    background: black;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #0186B4;
+    
+    border-radius: 1rem;
+}

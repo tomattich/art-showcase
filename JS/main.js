@@ -11,7 +11,7 @@ export function main () {
         
     </section>
     <section class="contact">
-        
+
     </section>
     `
 }
