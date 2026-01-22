@@ -16,6 +16,7 @@
         background-color: rgba(0, 0, 0, .4);
         filter: blur(1rem);
     }
+    
     @media (max-width: 800px) and (orientation: portrait) {
         background: url("../images/cover-phone.jpg") center center/cover no-repeat;
         .coverText {
