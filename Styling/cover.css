@@ -55,7 +55,6 @@
     h2 {
         font-size: 5rem;
         transition: all .3s ease-in-out;
-            cursor: default;
             background: url("../images/text-bg.png") center;
             -webkit-background-clip: text;
             background-clip: text;
@@ -81,7 +80,6 @@
     p {
         font-size: 2rem;
         transition: all .3s ease-in-out;
-            cursor: default;
             background: url("../images/text-bg.png") center;
             -webkit-background-clip: text;
             background-clip: text;
