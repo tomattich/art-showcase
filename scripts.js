@@ -6,10 +6,15 @@ import { featured } from './JS/featured.js'
 import { contact } from './JS/contact.js'
 import { animations } from './JS/animations.js'
 
-header()
-main()
-cover()
-about()
-featured()
-contact()
-animations()
+async function pageLoad() {
+    header()
+    main()
+    cover()
+    about()
+    await featured()
+    contact()
+    animations()
+}
+
+pageLoad()
+

@@ -9,6 +9,7 @@
     line-height: 1.5;
     color: white;
     cursor: none;
+    scroll-behavior: smooth;
 }
 
 main > section {
@@ -49,4 +50,11 @@ main > section {
 
 section {
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), black);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
 }

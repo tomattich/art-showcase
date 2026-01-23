@@ -1,3 +1,174 @@
 .featured {
-    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 2rem 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/showcase2.jpg") center center/cover no-repeat;
+        filter: brightness(0.3);
+        z-index: -1;
+        transform: scale(1.1);
+    }
+
+    h2 {
+        font-size: 5dvw;
+        transition: all .3s ease-in-out;
+        background: url("../images/text-bg2.png") center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+        filter: hue-rotate(0deg);
+
+        &::after {
+            content: "Featured Works";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../images/text-bg2.png") center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: blur(.5rem) brightness(1.5);
+            z-index: -1;
+        }
+        @media (max-width: 1080px) and (orientation: portrait) {
+            font-size: 7dvw;
+        }
+    }
+
+    p {
+        font-size: 1.5dvw;
+        transition: all .3s ease-in-out;
+        z-index: 1;
+        position: relative;
+        @media (max-width: 1080px) and (orientation: portrait) {
+            font-size: 4dvw;
+        }
+    }
+
+}
+
+.featuredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem;
+    width: 90%;
+    margin: 0 auto;
+
+    @media (max-width: 1080px) and (orientation: portrait) {
+        text-align: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.featuredContainerText {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1.5rem;
+
+    @media (max-width: 1080px) and (orientation: portrait) {
+        text-align: center;
+        width: 85%;
+    }
+}
+
+.featuredGallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 15vw;
+    width: 60%;
+    gap: 1rem;
+
+    @media (max-width: 1080px) and (orientation: portrait) {
+        width: 90vw;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 40vw;
+    }
+}
+
+.featuredWorkContainer {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        transform: scale(1.05);
+        z-index: 10;
+        
+        .artworkOverlay {
+            opacity: 1;
+        }
+    }
+}
+.featuredWorkContainer1 { 
+    grid-column: span 2; 
+    grid-row: span 2; 
+}
+.featuredWorkContainer4 { 
+    grid-row: span 2; 
+}
+.featuredWorkContainer9 { 
+    grid-column: span 2; 
+}
+
+.artworkOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1rem;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.artworkInfo h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: tomato;
+}
+
+.artworkDate {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+}
+
+.artworkMaterials {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    color: #ffd700;
+}
+
+.artworkDescription {
+    font-size: 0.9rem;
 }

@@ -8,7 +8,7 @@
 
     &::before {
         content: "";
-        background: url("../images/about/aboutBG.jpg") center center/cover no-repeat;
+        background: url("../images/compressed_images/aboutBG.jpg") center center/cover no-repeat;
         position: absolute;
         top: 0;
         left: 0;
@@ -20,7 +20,7 @@
     }
     @media (max-width: 1080px) and (orientation: portrait) {
         &::before {
-            background: url("../images/about/aboutBGphone.jpg") center center/cover no-repeat;
+            background: url("../images/compressed_images/aboutBGphone.jpg") center center/cover no-repeat;
         }
     }
     h2 {
@@ -118,7 +118,7 @@
 }
 
 .testingDivImgContainer1 {
-    background: url("../images/about/showcase9.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase9.jpg") center center/cover no-repeat;
     width: 35%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -126,7 +126,7 @@
     }
 }
 .testingDivImgContainer2 {
-    background: url("../images/about/showcase4.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase4.jpg") center center/cover no-repeat;
     width: 20%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -134,7 +134,7 @@
     }
 }
 .testingDivImgContainer3 {
-    background: url("../images/about/showcase2.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase2.jpg") center center/cover no-repeat;
     width: 41%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -142,7 +142,7 @@
     }
 }
 .testingDivImgContainer4 {
-    background: url("../images/about/showcase3.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase3.jpg") center center/cover no-repeat;
     width: 45%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -150,7 +150,7 @@
     }
 }
 .testingDivImgContainer5 {
-    background: url("../images/about/showcase11.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase11.jpg") center center/cover no-repeat;
     width: 20%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -158,7 +158,7 @@
     }
 }
 .testingDivImgContainer6 {
-    background: url("../images/about/showcase8.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase8.jpg") center center/cover no-repeat;
     width: 31%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {

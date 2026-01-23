@@ -6,20 +6,20 @@ header {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: 1vw;
     
     @media (max-width: 1080px) and (orientation: portrait) {
         justify-content: space-between;
-        padding: 1rem 2rem;
+        padding: 1vw 2vw;
         button {
-            font-size: 5dvw;
+            font-size: 5vw;
         }
     }
 }
 
 .underline {
-    margin-top: .2rem;
-    height: .1rem;
+    margin-top: .2vw;
+    height: .1vw;
     width: 0; 
     background-color: white;
     border: 0;
@@ -29,15 +29,16 @@ header {
 
 nav {
     display: flex;
-    gap: 3rem;
+    gap: 1vw;
+    
     button {
         color: white;
-
+        font-size: 1vw;
     }
     div button:hover + .underline {
     width: 100%;
     animation: renderLeftLine .3s ease-in-out;
-    filter: drop-shadow(0 0 .2rem white);
+    filter: drop-shadow(0 0 .2vw white);
     
     }
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -47,11 +48,11 @@ nav {
 
 .name {
     position: absolute;
-    font-size: 1.1rem;
-    top: 1.9dvh;
-    left: 5dvw;
+    font-size: 1vw;
+    top: 2vh;
+    left: 2vw;
     color: white;
     @media (max-width: 800px) and (orientation: portrait) {
-        font-size: 5dvw;
+        font-size: 5vw;
     }
 }

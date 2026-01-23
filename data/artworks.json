@@ -1,0 +1,107 @@
+[
+    {
+        "link": "images/compressed_images/showcase1.jpg",
+        "title": "Showcase Artwork 1",
+        "date": "2023-01-01",
+        "description": "A beautiful experimentation with colors and abstract forms.",
+        "materials": "Acrylic on Canvas"
+    },
+    {
+        "link": "images/compressed_images/showcase2.jpg",
+        "title": "Showcase Artwork 2",
+        "date": "2023-02-15",
+        "description": "Pseudo-psychedelic piece explorer visual boundaries.",
+        "materials": "Oil Paint, Mixed Media"
+    },
+    {
+        "link": "images/compressed_images/showcase3.jpg",
+        "title": "Showcase Artwork 3",
+        "date": "2023-03-20",
+        "description": "Experimental technique focused on texture and flow.",
+        "materials": "Watercolor and Ink"
+    },
+    {
+        "link": "images/compressed_images/showcase4.jpg",
+        "title": "Showcase Artwork 4",
+        "date": "2023-05-10",
+        "description": "Bold abstract composition with vibrant contrasts.",
+        "materials": "Digital Art / Digital Painting"
+    },
+    {
+        "link": "images/compressed_images/showcase5.jpg",
+        "title": "Showcase Artwork 5",
+        "date": "2023-06-05",
+        "description": "Inspired by traditional motifs with a modern twist.",
+        "materials": "Gouache on Paper"
+    },
+    {
+        "link": "images/compressed_images/showcase6.jpg",
+        "title": "Showcase Artwork 6",
+        "date": "2023-07-12",
+        "description": "Complex layering of colors to create depth.",
+        "materials": "Mixed Media"
+    },
+    {
+        "link": "images/compressed_images/showcase7.jpg",
+        "title": "Showcase Artwork 7",
+        "date": "2023-08-30",
+        "description": "A study in symmetry and organic shapes.",
+        "materials": "Charcoal and Pastel"
+    },
+    {
+        "link": "images/compressed_images/showcase8.jpg",
+        "title": "Showcase Artwork 8",
+        "date": "2023-10-15",
+        "description": "Vibrant and energetic visual expression.",
+        "materials": "Acrylic and Spray Paint"
+    },
+    {
+        "link": "images/compressed_images/showcase9.jpg",
+        "title": "Showcase Artwork 9",
+        "date": "2023-11-22",
+        "description": "Deep exploration of blue tones and shadows.",
+        "materials": "Oil on Wood"
+    },
+    {
+        "link": "images/compressed_images/showcase10.jpg",
+        "title": "Showcase Artwork 10",
+        "date": "2024-01-05",
+        "description": "Geometric abstraction with a focus on precision.",
+        "materials": "Ink and Marker"
+    },
+    {
+        "link": "images/compressed_images/showcase11.jpg",
+        "title": "Showcase Artwork 11",
+        "date": "2024-02-18",
+        "description": "Soft transitions and ethereal atmosphere.",
+        "materials": "Pastel on Paper"
+    },
+    {
+        "link": "images/compressed_images/showcase12.jpg",
+        "title": "Showcase Artwork 12",
+        "date": "2024-03-25",
+        "description": "Heavy texture and impasto technique.",
+        "materials": "Oil with Palette Knife"
+    },
+    {
+        "link": "images/compressed_images/showcase13.jpg",
+        "title": "Showcase Artwork 13",
+        "date": "2024-05-14",
+        "description": "An intricate pattern-driven composition.",
+        "materials": "Pen and Ink"
+    },
+    {
+        "link": "images/compressed_images/showcase14.jpg",
+        "title": "Showcase Artwork 14",
+        "date": "2024-06-30",
+        "description": "Final major piece in the current showcase series.",
+        "materials": "Mixed Media on Canvas"
+    },
+    {
+        "link": "images/compressed_images/showcase17.jpg",
+        "title": "Showcase Artwork 17",
+        "date": "2024-07-22",
+        "description": "A study in symmetry and organic shapes.",
+        "materials": "Charcoal and Pastel"
+    }
+]
