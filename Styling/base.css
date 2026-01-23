@@ -46,3 +46,7 @@ main > section {
         display: none;
     }
 }
+
+section {
+    background: linear-gradient(to bottom, black, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), black);
+}

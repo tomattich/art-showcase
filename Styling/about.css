@@ -8,15 +8,20 @@
 
     &::before {
         content: "";
+        background: url("../images/about/aboutBG.jpg") center center/cover no-repeat;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: url("../images/about/showcase1.jpg") center center/cover no-repeat;
-        filter: blur(8px) brightness(0.5);
+        filter:  brightness(.3);
+        scale: 1.1;
         z-index: -1;
-        transform: scale(1.1);
+    }
+    @media (max-width: 1080px) and (orientation: portrait) {
+        &::before {
+            background: url("../images/about/aboutBGphone.jpg") center center/cover no-repeat;
+        }
     }
     h2 {
         font-size: 5dvw ;
@@ -49,7 +54,7 @@
         position: relative;
         filter: hue-rotate(0deg);
         &::after {
-            content: "Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create piece on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.";
+            content: "Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.";
             position: absolute;
             top: 0;
             left: 0;
@@ -62,6 +67,7 @@
             filter: blur(.5rem) brightness(1.5);
             z-index: -1;
         }
+
     }
     @media (max-width: 1080px) and (orientation: portrait) {
         h2 {

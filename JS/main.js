@@ -6,6 +6,7 @@ export function main() {
     <section class="cover">
         
     </section>
+    
     <section class="about">
         
     </section>
