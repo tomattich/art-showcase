@@ -41,4 +41,8 @@ main > section {
     filter: hue-rotate(180deg);
     mix-blend-mode: difference;
     background-color: tomato;
+    box-shadow: 0 0 1rem tomato;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        display: none;
+    }
 }

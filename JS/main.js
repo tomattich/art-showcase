@@ -1,3 +1,4 @@
+import { cursor } from "./functions.js"
 export function main() {
     const main = document.querySelector("main")
     main.innerHTML = `
@@ -15,20 +16,5 @@ export function main() {
 
     </section>
     `
-
-    const cursor = document.querySelector(".cursor");
-    window.addEventListener("mousemove", (e) => {
-        cursor.style.left = e.clientX + "px";
-        cursor.style.top = e.clientY + "px";
-    });
-    window.addEventListener("click", () => {
-        cursor.style.transform = "translate(-50%, -50%) scale(2)";
-        setTimeout(() => {
-            cursor.style.transform = "translate(-50%, -50%) scale(1)";
-        }, 75);
-    });
-    window.addEventListener("mousedown", () => {
-        cursor.style.transform = "translate(-50%, -50%) scale(2)";
-        
-    });
+    cursor()
 }
