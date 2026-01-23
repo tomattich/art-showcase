@@ -11,7 +11,12 @@
     cursor: none;
     scroll-behavior: smooth;
 }
-
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    transition: all .3s ease-in-out;
+}
 main > section {
     min-height: 100vh;
 }
@@ -52,9 +57,4 @@ section {
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), black);
 }
 
-button {
-    background-color: transparent;
-    border: none;
-    font-size: 1.1rem;
-    transition: all .3s ease-in-out;
-}
+
