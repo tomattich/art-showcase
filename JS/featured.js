@@ -3,7 +3,6 @@ import { hueRotate } from "./functions.js"
 export async function featured() {
     const featured = document.querySelector(".featured")
 
-    // Fetch artworks data
     let artworks = [];
     try {
         const response = await fetch('./data/artworks.json');
@@ -20,14 +19,15 @@ export async function featured() {
         </div>
         <div class="featuredGallery">
             ${artworks.map((artwork, index) => `
-                <div class="featuredWorkContainer featuredWorkContainer${index + 1}" style="background: url('${artwork.link}') center center/cover no-repeat;">
-                    <div class="artworkOverlay">
-                        <div class="artworkInfo">
-                            <h3>${artwork.title}</h3>
-                            <p class="artworkDate">${artwork.date}</p>
-                            <p class="artworkMaterials">${artwork.materials}</p>
-                            <p class="artworkDescription">${artwork.description}</p>
-                        </div>
+                <div class="featuredWorkContainer featuredWorkContainer${index + 1}">
+                    <div class="artworkImageContainer">
+                        <img src="${artwork.link}" alt="${artwork.title}" class="artworkImage">
+                    </div>
+                    <div class="artworkDetails">
+                        <h3>${artwork.title}</h3>
+                        <p class="artworkDate">${artwork.date}</p>
+                        <p class="artworkMaterials">${artwork.materials}</p>
+                        <p class="artworkDescription">${artwork.description}</p>
                     </div>
                 </div>
             `).join('')}
@@ -36,5 +36,5 @@ export async function featured() {
     `
 
     const featuredContainerH2 = document.querySelector(".featuredContainerH2")
-    if (featuredContainerH2) hueRotate(featuredContainerH2)
+    hueRotate(featuredContainerH2)
 }

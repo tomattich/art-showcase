@@ -52,7 +52,7 @@ nav {
     top: 2vh;
     left: 2vw;
     color: white;
-    @media (max-width: 800px) and (orientation: portrait) {
+    @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 5vw;
     }
 }

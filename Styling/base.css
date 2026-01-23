@@ -10,6 +10,7 @@
     color: white;
     cursor: none;
     scroll-behavior: smooth;
+    user-select: none;
 }
 button {
     background-color: transparent;
