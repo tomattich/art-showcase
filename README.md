@@ -1,2 +1,5 @@
 # art-showcase
-a fairly nice looking page for my art (in progress)
+
+as of 24th of jan 2026 it is done, will be rolling out more funky functionalities though
+
+https://tomattich.github.io/art-showcase/
