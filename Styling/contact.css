@@ -189,12 +189,3 @@
     flex-wrap: wrap;
 }
 
-@keyframes orbit {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-@keyframes counter-orbit {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(-360deg); }
-}
