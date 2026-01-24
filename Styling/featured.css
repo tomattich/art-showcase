@@ -244,7 +244,6 @@
 
     .artworkExpandedContainer {
         width: 90dvw;
-        max-width: 1200px;
         height: 90dvh;
         max-height: 90dvh;
         background: #039fbb2e;
@@ -261,7 +260,6 @@
         @media (max-width: 1080px) and (orientation: portrait) {
             width: 95dvw;
             height: 95dvh;
-            padding: 4dvw;
         }
     }
 
