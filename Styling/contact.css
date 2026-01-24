@@ -55,7 +55,7 @@
         z-index: 1;
         position: relative;
         &::after {
-            content: "Interested in a commission/art piece or just want to say hello? I'm always open to discussing new projects, artistic opportunities, or experimental collaborations.";
+            content: "Interested in a commission, art piece, a chat with another fellow artist, or just want to say hello? I'm always open to discussing new projects, artistic opportunities, or experimental collaborations.";
             position: absolute;
             top: 0;
             left: 0;
