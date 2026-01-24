@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     background: url("../images/cover.jpg") center center/cover no-repeat;
     &::before {
         content: "";

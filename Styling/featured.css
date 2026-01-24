@@ -1,11 +1,9 @@
 .featured {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    overflow-x: hidden;
-    width: 100%;
+    overflow: hidden;
     &::before {
         content: "";
         position: absolute;
