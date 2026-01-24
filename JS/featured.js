@@ -80,7 +80,7 @@ export async function featured() {
                     <p class="artworkExpandedDate">Date: ${artwork.date}</p>
                     <p class="artworkExpandedMaterials">Materials: ${artwork.materials}</p>
                     <p class="artworkExpandedDescription">${artwork.description}</p>
-                    <a href="${artwork.link}" download="${artwork.title}" class="artworkExpandedDownloadButton">Download</a>
+                    <a href="${artwork.link.replace('compressed_images/', '')}" download="${artwork.title}" class="artworkExpandedDownloadButton">Download</a>
                 </div>
             </div>
         `;
