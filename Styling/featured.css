@@ -239,12 +239,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
     overflow-x: hidden;
     .artworkExpandedContainer {
         width: 90dvw;
         height: 90dvh;
-        max-height: 90dvh;
+        overflow-y: scroll;
         background: #039fbb2e;
         position: relative;
         display: flex;
@@ -254,12 +253,6 @@
         padding: 4dvw;
         box-sizing: border-box;
         border-radius: 1rem;
-
-        @media (max-width: 1080px) and (orientation: portrait) {
-            width: 90dvw;
-            height: 95dvh;
-            padding: 4dvw;
-        }
     }
 
     .artworkExpandedCloseButton {
