@@ -86,7 +86,7 @@ export async function featured() {
         `;
 
         document.body.appendChild(overlay);
-        document.body.style.overflowY = "hidden";
+        document.body.style.overflow = "hidden";
 
         const downloadButton = overlay.querySelector(".artworkExpandedDownloadButton");
         hueRotate(downloadButton);
@@ -94,13 +94,13 @@ export async function featured() {
         const closeButton = overlay.querySelector(".artworkExpandedCloseButton");
         closeButton.addEventListener("click", () => {
             overlay.remove();
-            document.body.style.overflowY = "auto";
+            document.body.style.overflow = "";
         });
 
         overlay.addEventListener("click", (e) => {
             if (e.target === overlay) {
                 overlay.remove();
-                document.body.style.overflowY = "auto";
+                document.body.style.overflow = "";
             }
         });
     }
