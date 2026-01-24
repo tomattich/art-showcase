@@ -8,3 +8,14 @@
         width: 100%;
     }
 }
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        mix-blend-mode: hard-light;
+    }
+    to {
+        opacity: 1;
+        mix-blend-mode: normal;
+    }
+}

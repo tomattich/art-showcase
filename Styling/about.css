@@ -54,7 +54,7 @@
         position: relative;
         filter: hue-rotate(0deg);
         &::after {
-            content: "Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.";
+            content: "Hello there!, am TomaTTich, an Algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.";
             position: absolute;
             top: 0;
             left: 0;

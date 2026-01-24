@@ -6,7 +6,7 @@ export function about() {
     <div class="aboutContainer">
         <div class="aboutContainerText">
             <h2 class="aboutContainerH2">About me !</h2>
-            <p>Hello there!, am TomaTTich, a algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.</p>
+            <p>Hello there!, am TomaTTich, an Algerian traditional artist specializing in pseudo-psychedelic and abstract art, i mostly create pieces on a whim and i love to experiment with colors and techniques to create something unique and eye-catching.</p>
         </div>
         <div class="testingDiv">
             <div class="testingDivImgContainer testingDivImgContainer1">
@@ -26,6 +26,5 @@ export function about() {
     `
     const aboutContainerH2 = document.querySelector(".aboutContainerH2")
     hueRotate(aboutContainerH2)
-
 }
 
