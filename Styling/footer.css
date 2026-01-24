@@ -1,0 +1,119 @@
+footer {
+    background: rgba(0, 0, 0, 0.95);
+    padding: 10dvh 5dvw 5dvh 5dvw;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.footerContainer {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5dvw;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+.footerBrand {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvh;
+}
+
+.footerLogo {
+    font-size: 3dvw;
+    text-align: left;
+    background: url("../images/text-bg2.png") center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .3s ease-in-out;
+    width: fit-content;
+        &::before {
+            content: "TomaTTich";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../images/text-bg2.png") center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            transition: all .3s ease-in-out;
+            filter: blur(.5rem);
+    }
+    @media (max-width: 1080px) and (orientation: portrait) {
+        font-size: 8dvw;
+        margin: 0 auto;
+    }
+}
+.footerNav {
+    display: flex;
+    flex-direction: column;
+    gap: 2dvh;
+    
+}
+.footerTagline {
+    font-size: 1.2dvw;
+    opacity: 0.7;
+    max-width: 30dvw;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        font-size: 4dvw;
+        max-width: 100%;
+    }
+}
+
+.footerNavGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5dvh;
+}
+
+.footerNavGroup h3 {
+    font-size: 1.5dvw;
+    color: #ff8ea1;
+    margin-bottom: 1dvh;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        font-size: 6dvw;
+    }
+}
+
+.footerLink {
+    text-align: left;
+    font-size: 1dvw;
+    transition: all 0.3s ease;
+    width: fit-content;
+    color: white;
+    opacity: 0.6;
+    
+    &:hover {
+        opacity: 1;
+        transform: translateX(10px);
+        color: #ff8ea1;
+    }
+
+    @media (max-width: 1080px) and (orientation: portrait) {
+        font-size: 4dvw;
+        margin: 0 auto;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.footerBottom {
+    grid-column: 1 / -1;
+    margin-top: 5dvh;
+    padding-top: 2dvh;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    font-size: 0.9dvw;
+    opacity: 0.4;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        font-size: 3dvw;
+    }
+}

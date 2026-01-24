@@ -3,6 +3,7 @@ export function main() {
     const main = document.querySelector("main")
     main.innerHTML = `
     <div class="cursor"></div>
+    
     <section class="cover">
         
     </section>

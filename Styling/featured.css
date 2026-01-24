@@ -15,7 +15,7 @@
         width: 100%;
         height: 100%;
         background: url("../images/featuredBG.jpg") center center/cover no-repeat;
-        filter: brightness(0.3);
+        filter: brightness(0.3) blur(.5rem);
         z-index: -1;
         transform: scale(1.1);
     }
@@ -110,6 +110,40 @@
     @media (max-width: 1080px) and (orientation: portrait) {
         padding: 4vw;
     }
+
+    .artworkExpandButton {
+        margin-top: auto;
+        align-self: flex-end;
+        background: url("../images/button-bg.png") center center/cover no-repeat;
+        color: black;
+        text-shadow: 0 0 .5rem black;
+        border: none;
+        padding: 0.5dvw 1dvw;
+        font-size: 0.8dvw;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        z-index: 5;
+        mix-blend-mode: normal;
+
+        &:hover {
+            &::before {
+                filter: brightness(1.2);
+                content: "";
+                position: fixed;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background: url("../images/button-bg.png") center center/cover no-repeat;
+                z-index: -1;
+            }
+        }
+
+        @media (max-width: 1080px) and (orientation: portrait) {
+            font-size: 3dvw;
+            padding: 2dvw 4dvw;
+        }
+    }
 }
 
 .artworkImageContainer {
@@ -161,7 +195,7 @@
 
 .artworkDetails .artworkDate {
     font-size: .75vw;
-
+    color: #fff;
     @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 3dvw;
     }
@@ -170,6 +204,7 @@
 .artworkDetails .artworkMaterials {
     font-weight: bold;
     font-size: .75vw;
+    color: #fff;
     @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 3dvw;
     }
@@ -195,3 +230,151 @@
         aspect-ratio: 1/1;
     }
 }
+
+.artworkExpandedOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .artworkExpandedContainer {
+        width: 90dvw;
+        height: 90dvh;
+        background: #039fbb2e;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 2dvw;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
+
+    .artworkExpandedCloseButton {
+        align-self: flex-start;
+        background: url("../images/button-bg.png") center center/cover no-repeat;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #000;
+        width: 3dvw;
+        height: 3dvw;
+        padding: 0;
+        aspect-ratio: 1 / 1;
+        transition: all 0.3s ease;
+        z-index: 10001;
+        border-radius: 50%;
+        svg {
+            height: 60%;
+            width: auto;
+            stroke: black;
+            filter: drop-shadow(0 0 .5rem black);
+            display: block;
+        }
+        &:hover {
+            filter: brightness(1.2);
+        }
+
+        @media (max-width: 1080px) and (orientation: portrait) {
+            width: 10dvw;
+            height: 10dvw;
+        }
+    }
+
+    .artworkExpandedImageContainer {
+        width: 100%;
+        height: 60dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2dvh;
+
+        .artworkExpandedImage {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            user-select: none;
+            -webkit-user-drag: none;
+        }
+    }
+
+    .artworkExpandedDetails {
+        width: 80%;
+        margin-top: 2dvh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1dvh;
+
+        .artworkExpandedTitle {
+            font-size: 2.5dvw;
+            color: #ff8ea1;
+
+            @media (max-width: 1080px) and (orientation: portrait) {
+                font-size: 7dvw;
+            }
+        }
+
+        .artworkExpandedDate, .artworkExpandedMaterials {
+            font-size: 1dvw;
+            color: #fff;
+            font-weight: bold;
+
+            @media (max-width: 1080px) and (orientation: portrait) {
+                font-size: 4dvw;
+            }
+        }
+
+        .artworkExpandedDescription {
+            font-size: 1.2dvw;
+            color: yellow;
+            font-weight: bold;
+            line-height: 1.4;
+            margin-top: 1dvh;
+            @media (max-width: 1080px) and (orientation: portrait) {
+                font-size: 4.5dvw;
+            }
+        }
+
+        .artworkExpandedDownloadButton {
+            margin-top: 2dvh;
+            align-self: center;
+            background: url("../images/button-bg.png") center center/cover no-repeat;
+            color: black;
+            text-shadow: 0 0 .5rem black;
+            text-decoration: none;
+            padding: 0.8dvw 1.5dvw;
+            font-size: 1dvw;
+            font-weight: bold;
+            border-radius: 0.2dvw;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+
+            &:hover {
+                &::before {
+                    filter: brightness(1.2);
+                    content: "";
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                background: url("../images/button-bg.png") center center/cover no-repeat;
+                z-index: -1;
+            }
+        }
+                }
+            }
+
+            @media (max-width: 1080px) and (orientation: portrait) {
+                padding: 3dvw 6dvw;
+                font-size: 4dvw;
+                margin-top: 4dvh;
+            }
+        }    
+

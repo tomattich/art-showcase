@@ -36,3 +36,10 @@ export function cursor() {
         });
     }
 }
+
+export function smoothScroll(selector) {
+    const target = document.querySelector(selector);
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+    }
+}
