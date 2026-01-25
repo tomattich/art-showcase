@@ -13,7 +13,8 @@ export function animations() {
     sr.reveal('.featuredContainerText', { origin: 'left', delay: 0 });
     sr.reveal('.featuredGallery', { origin: 'bottom', distance: '10rem', delay: 0 });
     sr.reveal('.featuredWorkContainer', { origin: 'bottom', delay: 0 });
-    sr.reveal('.contactContainer', { origin: 'bottom' });
+    sr.reveal('.contactContainerText', { origin: 'left' });
+    sr.reveal('.socialLinks', { origin: 'right' });
     sr.reveal('.testingDivImgContainer1', { origin: 'left', distance: '10rem', delay: 0 });
     sr.reveal('.testingDivImgContainer2', { origin: 'top', distance: '10rem', delay: 0 });
     sr.reveal('.testingDivImgContainer3', { origin: 'right', distance: '10rem', delay: 0 });

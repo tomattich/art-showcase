@@ -1,5 +1,5 @@
 footer {
-    min-height: 100dvh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,39 +89,39 @@ footer {
 
 .footerNavGroup {
     display: flex;
-    flex-direction: column;
+    width: fit-content;
+    align-self: center;
     gap: 1.5dvh;
 }
 
-.footerNavGroup h3 {
-    font-size: 1.5dvw;
-    color: #ff8ea1;
+.footerNav h3 {
+    font-size: 3dvw;
     margin-bottom: 1dvh;
+    position: relative;
+    background: url("../images/text-bg2.png") center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    width: fit-content;
+    
+    &::before {
+        content: "Navigation";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/text-bg2.png") center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transition: all .3s ease-in-out;
+        filter: blur(.5rem);
+    }
+    
     @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 6dvw;
-    }
-}
-
-.footerLink {
-    text-align: left;
-    font-size: 1dvw;
-    transition: all 0.3s ease;
-    width: fit-content;
-    color: white;
-    opacity: 0.6;
-    
-    &:hover {
-        opacity: 1;
-        transform: translateX(10px);
-        color: #ff8ea1;
-    }
-
-    @media (max-width: 1080px) and (orientation: portrait) {
-        font-size: 4dvw;
         margin: 0 auto;
-        &:hover {
-            transform: scale(1.1);
-        }
     }
 }
 
@@ -135,5 +135,127 @@ footer {
     opacity: 0.4;
     @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 3dvw;
+    }
+}
+
+/* Orbit Animations */
+.orbit1, .orbit2, .orbit3 {
+    position: absolute;
+    border-radius: 50%;
+    border: .1rem solid rgba(255, 99, 71, 0.228);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.orbit1 {
+    width: 25vw;
+    height: 25vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.orbit2 {
+    width: 35vw;
+    height: 35vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0.5s;
+
+}
+
+.orbit3 {
+    width: 50vw;
+    height: 50vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 1s;
+
+}
+
+.orbit1Inner, .orbit2Inner, .orbit3Inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    mix-blend-mode: difference;
+}
+
+.orbit1Inner {
+    animation: rotate 20s linear infinite;
+}
+
+.orbit2Inner {
+    animation: rotate 30s linear infinite reverse;
+}
+
+.orbit3Inner {
+    animation: rotate 40s linear infinite;
+}
+
+.orbit1InnerInner, .orbit2InnerInner, .orbit3InnerInner {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgb(255, 142, 161), rgba(255, 142, 161, 0.3));
+    box-shadow: 
+        0 0 20px rgba(255, 142, 161, 0.6),
+        0 0 40px rgba(255, 142, 161, 0.4),
+        inset 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.orbit1InnerInner {
+    width: 3.5vw;
+    height: 3.5vw;
+    background: radial-gradient(circle, #ff8ea1, #ff6b85);
+}
+
+.orbit2InnerInner {
+    width: 2vw;
+    height: 2vw;
+    background: radial-gradient(circle, #a18eff, #6b85ff);
+}
+
+.orbit3InnerInner {
+    width: 2vw;
+    height: 2vw;
+    background: radial-gradient(circle, #8effa1, #6bff85);
+}
+
+@media (max-width: 1080px) and (orientation: portrait) {
+    .orbit1 {
+        width: 60vw;
+        height: 60vw;
+    }
+    
+    .orbit2 {
+        width: 80vw;
+        height: 80vw;
+    }
+    
+    .orbit3 {
+        width: 100vw;
+        height: 100vw;
+    }
+    
+    .orbit1InnerInner {
+        width: 6vw;
+        height: 6vw;
+    }
+    
+    .orbit2InnerInner {
+        width: 4vw;
+        height: 4vw;
+    }
+    
+    .orbit3InnerInner {
+        width: 4vw;
+        height: 4vw;
     }
 }
