@@ -57,7 +57,7 @@ main > section {
         display: none;
     }
 }
-section {
+section, footer {
     background: linear-gradient(to bottom, black, rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), black);
 }
 

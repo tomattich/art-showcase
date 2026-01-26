@@ -6,18 +6,16 @@ footer {
     position: relative;
     overflow: hidden;
     padding: 10dvh 5dvw;
-    z-index: 1;
     &::before {
         content: "";
+        filter: brightness(0.2);
+        background: url("../images/footerBG.jpg") center/cover no-repeat;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: url("../images/showcase15.jpg") ;
-        filter: brightness(0.15);
         z-index: -1;
-        scale: 1.2;
     }
     @media (max-width: 1080px) and (orientation: portrait) {
         &::before {
