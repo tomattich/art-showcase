@@ -1,9 +1,5 @@
 export function hueRotate(title) {
     let hue = 0;
-    title.addEventListener("mouseover", () => {
-        hue += 100;
-        title.style.filter = `hue-rotate(${hue}deg)`
-    })         
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`

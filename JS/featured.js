@@ -86,7 +86,12 @@ export async function featured() {
         `;
 
         document.body.appendChild(overlay);
-
+        const artworkExpandedDetails = overlay.querySelector(".artworkExpandedDetails");
+        hueRotate(artworkExpandedDetails);
+        const artworkDetails = overlay.querySelectorAll(".artworkExpandedDetails");
+        artworkDetails.forEach((artworkDetails) => {
+            hueRotate(artworkDetails);
+        })
 
         const downloadButton = overlay.querySelector(".artworkExpandedDownloadButton");
         hueRotate(downloadButton);
