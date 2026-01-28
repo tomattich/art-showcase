@@ -308,9 +308,9 @@
         height: auto;
         flex-shrink: 1;
         max-height: 80dvh;
+        align-content: flex-end;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-end;
 
         .artworkExpandedImage {
             max-width: 100%;
@@ -332,7 +332,7 @@
     }
 
     .artworkExpandedDetails {
-        width: 30%;
+        width: 40%;
         max-width: 100%;
         text-align: left;
         display: flex;

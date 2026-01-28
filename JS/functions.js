@@ -1,12 +1,13 @@
 export function hueRotate(title) {
     let hue = 0;
+
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`
+        if (hue >= 360) {
+            hue = hue - 360 ;
+        } 
     }, 90)
-    if (hue >= 360) {
-        hue = hue - 360 ;
-    } 
 }
 
 export function cursor() {
