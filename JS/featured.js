@@ -13,27 +13,30 @@ export async function featured() {
     let index = 1;
     featured.innerHTML = `
     <div class="featuredContainer">
-        <div class="featuredContainerText">
-            <h2 class="featuredContainerH2">Featured Works</h2>
-            <p>Discover a selection of my favorite pieces, each telling a unique story through colour and form. These works represent my journey as an artist and my passion for experimental traditional art.</p>
-        </div>
-        ${artworks.map((artwork) => `
+    <div class="featuredContainerText">
+    <h2 class="featuredContainerH2">Featured Works</h2>
+    <p>Discover a selection of my favorite pieces, each telling a unique story through colour and form. These works represent my journey as an artist and my passion for experimental traditional art.</p>
+    </div>
+    ${artworks.map((artwork) => `
             <div class="featuredWorkContainer featuredWorkContainer${index++}">
-                <div class="artworkImageContainer">
+            <div class="artworkImageContainer">
                     <img src="${artwork.image}" alt="${artwork.title}" class="artworkImage">
                 </div>
                 <div class="artworkDetails">
-                    <h3>${artwork.title}</h3>
-                    <p class="artworkDate">${artwork.date}</p>
-                    <p class="artworkMaterials">${artwork.materials}</p>
-                    <p class="artworkDescription">${artwork.description}</p>
+                <h3>${artwork.title}</h3>
+                <p class="artworkDate">${artwork.date}</p>
+                <p class="artworkMaterials">${artwork.materials}</p>
+                <p class="artworkDescription">${artwork.description}</p>
                 </div>
                 <button class="artworkExpandButton">Expand</button>
             </div>
-        `).join('')}
-    </div>
+            `).join('')}
+            </div>
     `
-
+    const artworkDetails = document.querySelectorAll(".artworkDetails");
+    artworkDetails.forEach((artworkDetails) => {
+        hueRotate(artworkDetails);
+    })
     const featuredContainerH2 = document.querySelector(".featuredContainerH2")
     const artworkImage = document.querySelectorAll(".artworkImage")
     hueRotate(featuredContainerH2)
@@ -88,10 +91,6 @@ export async function featured() {
         document.body.appendChild(overlay);
         const artworkExpandedDetails = overlay.querySelector(".artworkExpandedDetails");
         hueRotate(artworkExpandedDetails);
-        const artworkDetails = overlay.querySelectorAll(".artworkExpandedDetails");
-        artworkDetails.forEach((artworkDetails) => {
-            hueRotate(artworkDetails);
-        })
 
         const downloadButton = overlay.querySelector(".artworkExpandedDownloadButton");
         hueRotate(downloadButton);
