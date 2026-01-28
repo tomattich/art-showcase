@@ -20,7 +20,7 @@ export async function featured() {
         ${artworks.map((artwork, index) => `
             <div class="featuredWorkContainer featuredWorkContainer${index + 1}">
                 <div class="artworkImageContainer">
-                    <img src="${artwork.link}" alt="${artwork.title}" class="artworkImage">
+                    <img src="${artwork.image}" alt="${artwork.title}" class="artworkImage">
                 </div>
                 <div class="artworkDetails">
                     <h3>${artwork.title}</h3>
@@ -73,14 +73,14 @@ export async function featured() {
                     </svg>
                 </button>
                 <div class="artworkExpandedImageContainer">
-                    <img src="${artwork.link}" alt="${artwork.title}" class="artworkExpandedImage">
+                    <img src="${artwork.expandedImage}" alt="${artwork.title}" class="artworkExpandedImage">
                 </div>
                 <div class="artworkExpandedDetails">
                     <h3 class="artworkExpandedTitle">${artwork.title}</h3>
                     <p class="artworkExpandedDate">Date: ${artwork.date}</p>
                     <p class="artworkExpandedMaterials">Materials: ${artwork.materials}</p>
                     <p class="artworkExpandedDescription">${artwork.description}</p>
-                    <a href="${artwork.link.replace('compressed_images/', '')}" download="${artwork.title}" class="artworkExpandedDownloadButton">Download</a>
+                    <a href="${artwork.expandedImage}" download="${artwork.title}" class="artworkExpandedDownloadButton">Download</a>
                 </div>
             </div>
         `;

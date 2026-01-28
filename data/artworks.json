@@ -1,125 +1,143 @@
 [
     {
-        "link": "images/compressed_images/showcase1.jpg",
+        "image": "images/compressed_images/showcase1.jpg",
+        "expandedImage": "images/showcase1.jpg",
         "title": "Purple gaze",
         "date": "December 14, 2024",
         "description": "Captivating.",
         "materials": "Alcohol markers on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase2.jpg",
+        "image": "images/compressed_images/showcase2.jpg",
+        "expandedImage": "images/showcase2.jpg",
         "title": "Masked",
         "date": "February 20, 2025",
         "description": "Pseudo-psychedelic piece exploring visual boundaries.",
         "materials": "Ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase3.jpg",
+        "image": "images/compressed_images/showcase3.jpg",
+        "expandedImage": "images/showcase3.jpg",
         "title": "Chaotic Peace",
         "date": "December 29, 2024",
         "description": "The vividly colorful butterflies wildly fly around the deathly pale woman, will the butterflies lose color just like her?.",
         "materials": "Alcohol markers and ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase4.jpg",
+        "image": "images/compressed_images/showcase4.jpg",
+        "expandedImage": "images/showcase4.jpg",
         "title": "Interesting surfing board",
         "date": "December 19, 2024",
         "description": "Bold abstract composition with vibrant contrasts.",
         "materials": "Alcohol markers and ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase5.jpg",
+        "image": "images/compressed_images/showcase5.jpg",
+        "expandedImage": "images/showcase5.jpg",
         "title": "Titan 12",
         "date": "October 21, 2024",
         "description": "Tomato moon is spinning.",
         "materials": "Ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase6.jpg",
+        "image": "images/compressed_images/showcase6.jpg",
+        "expandedImage": "images/showcase6.jpg",
         "title": "Chained",
         "date": "November 24, 2024",
         "description": "That cigarette got something odd going on with it.",
         "materials": "Ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase7.jpg",
+        "image": "images/compressed_images/showcase7.jpg",
+        "expandedImage": "images/showcase7.jpg",
         "title": "Branches",
         "date": "September 6, 2024",
         "description": "Zoned off a bit.",
         "materials": "Ink pens and CD marker on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase8.jpg",
+        "image": "images/compressed_images/showcase8.jpg",
+        "expandedImage": "images/showcase8.jpg",
         "title": "mindless",
         "date": "September 7, 2024",
         "description": "Drawing upside down is kinda fun.",
         "materials": "Ink pens and CD marker on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase9.jpg",
-        "title": " Sketchy transaction",
+        "image": "images/compressed_images/showcase9.jpg",
+        "expandedImage": "images/showcase9.jpg",
+        "title": "Sketchy transaction",
         "date": "October 19, 2024",
         "description": "Some of those tomatoes look a bit odd.",
         "materials": "Ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase10.jpg",
+        "image": "images/compressed_images/showcase10.jpg",
+        "expandedImage": "images/showcase10.jpg",
         "title": "Can you see it?",
         "date": "August 25, 2024",
         "description": "It gazes back.",
         "materials": "Ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase11.jpg",
+        "image": "images/compressed_images/showcase11.jpg",
+        "expandedImage": "images/showcase11.jpg",
         "title": "The machine",
         "date": "August 6, 2025",
         "description": "I'm not sure what this is.",
         "materials": "Alcohol markers and ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase12.jpg",
+        "image": "images/compressed_images/showcase12.jpg",
+        "expandedImage": "images/showcase12.jpg",
         "title": "Don't smoke kids",
         "date": "August 27, 2025",
         "description": "You might not escape the trance.",
         "materials": "Alcohol markers and ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase13.jpg",
+        "image": "images/compressed_images/showcase13.jpg",
+        "expandedImage": "images/showcase13.jpg",
         "title": "New flesh",
         "date": "April 2, 2025",
         "description": "The mind is yet to be changed.",
         "materials": "Ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase14.jpg",
+        "image": "images/compressed_images/showcase14.jpg",
+        "expandedImage": "images/showcase14.jpg",
         "title": "Revive",
         "date": "July 28, 2025",
         "description": "Don't blink.",
         "materials": "Alcohol markers and ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase15.jpg",
+        "image": "images/compressed_images/showcase15.jpg",
+        "expandedImage": "images/showcase15.jpg",
         "title": "Odd piano",
         "date": "August 19, 2024",
         "description": "looks like she making a cut-scene.",
         "materials": "Ink pens and CD marker on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase16.jpg",
+        "image": "images/compressed_images/showcase16.jpg",
+        "expandedImage": "images/showcase16.jpg",
         "title": "It keeps working & working",
         "date": "April 13, 2024",
         "description": "& working & working & working & working & working & working& working & working & working& working & working & working& working & working & working...",
         "materials": "Ink pens on Bristol paper"
     },
     {
-        "link": "images/compressed_images/showcase17.jpg",
+        "image": "images/compressed_images/showcase17.jpg",
+        "expandedImage": "images/showcase17.jpg",
         "title": "Machine eater",
         "date": "February 11, 2025",
         "description": "Like the game, get it?",
         "materials": "Ink pens on Bristol paper."
     },
     {
-        "link": "images/compressed_images/showcase18.jpg",
+        "image": "images/compressed_images/showcase18.jpg",
+        "expandedImage": "images/showcase18.jpg",
         "title": "Hunt the machine",
         "date": "November 25, 2024",
         "description": "The numbers are rising.",

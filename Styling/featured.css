@@ -244,20 +244,29 @@
     .artworkExpandedContainer {
         width: 90dvw;
         height: 90dvh;
-        overflow-y: scroll;
+        overflow-y: auto;
         background: #039fbb2e;
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
-        padding: 4dvw;
+        justify-content: center;
+        padding: 2.5dvw;
         box-sizing: border-box;
         border-radius: 1rem;
+        gap: 4vw;
+
+        @media (max-width: 1080px) and (orientation: portrait) {
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 8vw 4vw;
+        }
     }
 
     .artworkExpandedCloseButton {
-        align-self: flex-start;
+        position: absolute;
+        top: 2dvw;
+        left: 2dvw;
         background: url("../images/button-bg.png") center center/cover no-repeat;
         border: none;
         display: flex;
@@ -271,7 +280,6 @@
         transition: all 0.3s ease;
         z-index: 10001;
         border-radius: 50%;
-
 
         svg {
             height: 60%;
@@ -289,34 +297,45 @@
         @media (max-width: 1080px) and (orientation: portrait) {
             width: 12dvw;
             height: 12dvw;
+            top: 4vw;
+            left: 4vw;
         }
     }
 
     .artworkExpandedImageContainer {
         width: 100%;
         height: auto;
-        flex-shrink: 0;
-        max-height: 60dvh;
+        flex-shrink: 1;
+        max-height: 80dvh;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 2dvh;
 
         .artworkExpandedImage {
             max-width: 100%;
-            max-height: 60dvh;
+            max-height: 80dvh;
             object-fit: contain;
             user-select: none;
             -webkit-user-drag: none;
         }
+
+        @media (max-width: 1080px) and (orientation: portrait) {
+            width: 100%;
+            max-height: 60dvh;
+            margin-top: 2dvh;
+
+            .artworkExpandedImage {
+                max-height: 60dvh;
+            }
+        }
     }
 
     .artworkExpandedDetails {
-        width: 100%;
-        max-width: 800px;
-        margin-top: 2dvh;
-        text-align: center;
+        width: 50%;
+        max-width: 100%;
+        text-align: left;
         display: flex;
+        align-self: flex-start;
         flex-direction: column;
         gap: 1dvh;
         flex-shrink: 0;
@@ -355,7 +374,7 @@
         .artworkExpandedDownloadButton {
             margin-top: 4dvh;
             margin-bottom: 2dvh;
-            align-self: center;
+            align-self: flex-start;
             background: url("../images/button-bg.png") center center/cover no-repeat;
             color: black;
             text-shadow: 0 0 .5rem black;
@@ -367,16 +386,24 @@
             transition: all 0.3s ease;
             width: fit-content;
 
+            @media (max-width: 1080px) and (orientation: portrait) {
+                align-self: center;
+                width: 100%;
+                padding: 3dvw 0;
+                font-size: 5dvw;
+                text-align: center;
+            }
+
             &:hover {
                 filter: brightness(1.2);
                 transform: scale(1.05);
             }
+        }
 
-            @media (max-width: 1080px) and (orientation: portrait) {
-                width: 100%;
-                padding: 3dvw 0;
-                font-size: 5dvw;
-            }
+        @media (max-width: 1080px) and (orientation: portrait) {
+            width: 100%;
+            text-align: center;
+            margin-top: 2dvh;
         }
     }
 }
