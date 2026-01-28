@@ -264,7 +264,7 @@
     }
 
     .artworkExpandedCloseButton {
-        position: absolute;
+        align-self: flex-start;
         top: 2dvw;
         left: 2dvw;
         background: url("../images/button-bg.png") center center/cover no-repeat;
@@ -275,6 +275,7 @@
         color: #000;
         width: 3dvw;
         height: 3dvw;
+        mix-blend-mode: color-dodge;
         padding: 0;
         aspect-ratio: 1 / 1;
         transition: all 0.3s ease;
@@ -331,15 +332,14 @@
     }
 
     .artworkExpandedDetails {
-        width: 50%;
+        width: 30%;
         max-width: 100%;
         text-align: left;
         display: flex;
-        align-self: flex-start;
+
         flex-direction: column;
         gap: 1dvh;
         flex-shrink: 0;
-
         .artworkExpandedTitle {
             font-size: 2.5dvw;
             color: #ff8ea1;
@@ -382,10 +382,25 @@
             padding: 0.8dvw 1.5dvw;
             font-size: 1dvw;
             font-weight: bold;
+            &::before {
+                filter: drop-shadow(0 0 .5rem pink);
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: url("../images/button-bg.png") center center/cover no-repeat;
+                scale: 1.1;
+                z-index: -1;
+            }
+
             border-radius: 0.2dvw;
             transition: all 0.3s ease;
             width: fit-content;
-
+            &:hover {
+                transform: scale(1.2);
+            }
             @media (max-width: 1080px) and (orientation: portrait) {
                 align-self: center;
                 width: 100%;
@@ -394,10 +409,6 @@
                 text-align: center;
             }
 
-            &:hover {
-                filter: brightness(1.2);
-                transform: scale(1.05);
-            }
         }
 
         @media (max-width: 1080px) and (orientation: portrait) {

@@ -10,15 +10,15 @@ export async function featured() {
     } catch (error) {
         console.error("Error loading artworks:", error);
     }
-
+    let index = 1;
     featured.innerHTML = `
     <div class="featuredContainer">
         <div class="featuredContainerText">
             <h2 class="featuredContainerH2">Featured Works</h2>
             <p>Discover a selection of my favorite pieces, each telling a unique story through colour and form. These works represent my journey as an artist and my passion for experimental traditional art.</p>
         </div>
-        ${artworks.map((artwork, index) => `
-            <div class="featuredWorkContainer featuredWorkContainer${index + 1}">
+        ${artworks.map((artwork) => `
+            <div class="featuredWorkContainer featuredWorkContainer${index++}">
                 <div class="artworkImageContainer">
                     <img src="${artwork.image}" alt="${artwork.title}" class="artworkImage">
                 </div>
@@ -86,7 +86,7 @@ export async function featured() {
         `;
 
         document.body.appendChild(overlay);
-        document.body.style.overflow = "hidden";
+
 
         const downloadButton = overlay.querySelector(".artworkExpandedDownloadButton");
         hueRotate(downloadButton);
@@ -94,13 +94,11 @@ export async function featured() {
         const closeButton = overlay.querySelector(".artworkExpandedCloseButton");
         closeButton.addEventListener("click", () => {
             overlay.remove();
-            document.body.style.overflow = "";
         });
 
         overlay.addEventListener("click", (e) => {
             if (e.target === overlay) {
                 overlay.remove();
-                document.body.style.overflow = "";
             }
         });
     }

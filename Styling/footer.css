@@ -101,7 +101,7 @@ footer {
     background-clip: text;
     color: transparent;
     width: fit-content;
-    
+    transition: all .3s ease-in-out;
     &::before {
         content: "Navigation";
         position: absolute;

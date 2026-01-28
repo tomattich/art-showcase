@@ -1,5 +1,8 @@
 export function hueRotate(title) {
     let hue = 0;
+    title.addEventListener("mouseover", () => {
+        hue += 100;
+    })
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`
@@ -19,8 +22,6 @@ export function cursor() {
         }, 75);
     });
     window.addEventListener("mousedown", () => {
-        cursor.style.display = "block";
-        cursor.style.transform = "translate(-50%, -50%) scale(1)";
         setTimeout(() => {
             cursor.style.transform = "translate(-50%, -50%) scale(2)";
         }, 100);
