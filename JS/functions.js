@@ -1,22 +1,18 @@
 export function hueRotate(title) {
     let hue = 0;
     title.addEventListener("mouseover", () => {
-        do {
-            setTimeout(() => {
-                hue += 1;
-                title.style.filter = `hue-rotate(${hue}deg)`
-            }, 1000)
-        } while (hue >= 360)
-        hue = hue - 360;
-    })
+        hue += 100;
+        title.style.filter = `hue-rotate(${hue}deg)`
+    })         
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`
     }, 90)
     if (hue >= 360) {
-        hue = 0;
-    }            
+        hue = hue - 360 ;
+    } 
 }
+
 export function cursor() {
     const cursor = document.querySelector(".cursor");
     window.addEventListener("mousemove", (e) => {
