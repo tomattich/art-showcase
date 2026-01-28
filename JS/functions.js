@@ -1,14 +1,22 @@
 export function hueRotate(title) {
     let hue = 0;
     title.addEventListener("mouseover", () => {
-        hue += 100;
+        do {
+            setTimeout(() => {
+                hue += 1;
+                title.style.filter = `hue-rotate(${hue}deg)`
+            }, 1000)
+        } while (hue >= 360)
+        hue = hue - 360;
     })
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`
     }, 90)
+    if (hue >= 360) {
+        hue = 0;
+    }            
 }
-
 export function cursor() {
     const cursor = document.querySelector(".cursor");
     window.addEventListener("mousemove", (e) => {
@@ -27,6 +35,13 @@ export function cursor() {
         }, 100);
     });
     if (window.matchMedia("only screen and (max-width: 1080px) and (orientation: portrait)").matches) {
+        window.addEventListener("mousedown", () => {
+            cursor.style.display = "block";
+            cursor.style.transform = "translate(-50%, -50%) scale(1)";
+            setTimeout(() => {
+                cursor.style.transform = "translate(-50%, -50%) scale(2)";
+            }, 100);
+        });
         window.addEventListener("mouseup", () => {
             setTimeout(() => {
                 cursor.style.transform = "translate(-50%, -50%) scale(1)";

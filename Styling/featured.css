@@ -403,7 +403,7 @@
             }
             @media (max-width: 1080px) and (orientation: portrait) {
                 align-self: center;
-                width: 100%;
+                width: 90%;
                 padding: 3dvw 0;
                 font-size: 5dvw;
                 text-align: center;

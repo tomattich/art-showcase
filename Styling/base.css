@@ -11,6 +11,9 @@
     cursor: none;
     scroll-behavior: smooth;
     user-select: none;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        cursor: auto;
+    }
 }
 body {
     overflow-x: hidden;
