@@ -39,6 +39,15 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2dvh;
+    p {
+        font-size: 1dvw;
+        opacity: 0.7;
+        max-width: 30dvw;
+        @media (max-width: 1080px) and (orientation: portrait) {
+            font-size: 3dvw;
+            max-width: 100%;
+        }
+    }
 }
 
 .footerLogo {
@@ -75,15 +84,7 @@ footer {
     gap: 2dvh;
     
 }
-.footerTagline {
-    font-size: 1.2dvw;
-    opacity: 0.7;
-    max-width: 30dvw;
-    @media (max-width: 1080px) and (orientation: portrait) {
-        font-size: 4dvw;
-        max-width: 100%;
-    }
-}
+
 
 .footerNavGroup {
     display: flex;
@@ -140,7 +141,7 @@ footer {
 .orbit1, .orbit2, .orbit3 {
     position: absolute;
     border-radius: 50%;
-    border: .1rem solid rgba(255, 99, 71, 0.228);
+    border: .1dvw solid rgba(255, 99, 71, 0.228);
     pointer-events: none;
     mix-blend-mode: difference;
 }

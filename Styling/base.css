@@ -22,14 +22,14 @@ body {
 button {
     background-color: transparent;
     border: none;
-    font-size: 1.1rem;
+    font-size: 1.1dvw;
     transition: all .3s ease-in-out;
 }
 main > section {
     min-height: 100vh;
 }
 ::-webkit-scrollbar {
-    width: .2rem;
+    width: .2dvw;
     background: black;
 }
 ::-webkit-scrollbar-track {
@@ -37,13 +37,12 @@ main > section {
 }
 ::-webkit-scrollbar-thumb {
     background: #0186B4;
-    border-radius: 1rem;
+    border-radius: 1dvw;
 }
 
 .cursor {
-    width: 2rem;
-    height: 2rem;
-    
+    width: 2dvw;
+    height: 2dvw;
     border-radius: 50%;
     position: fixed;
     top: 0;
@@ -55,7 +54,7 @@ main > section {
     filter: hue-rotate(180deg);
     mix-blend-mode: difference;
     background-color: tomato;
-    box-shadow: 0 0 1rem tomato;
+    box-shadow: 0 0 1dvw tomato;
     @media (max-width: 1080px) and (orientation: portrait) {
         display: none;
     }
