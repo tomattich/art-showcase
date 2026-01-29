@@ -4,8 +4,8 @@ export function hueRotate(title) {
     setInterval(() => {
         hue += 1;
         title.style.filter = `hue-rotate(${hue}deg)`
-        if (hue >= 360) {
-            hue = hue - 360 ;
+        if (hue == 360) {
+            hue = 0;
         } 
     }, 90)
 }

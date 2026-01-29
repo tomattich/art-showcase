@@ -1,5 +1,5 @@
 import { smoothScroll } from "./functions.js"
-
+import { hueRotate } from "./functions.js"
 export function header() {
     const header = document.querySelector("header")
 
@@ -19,9 +19,10 @@ export function header() {
             <hr class="underline">
         </div>
     </nav>`
+    const name = document.querySelector(".name");
 
-    document.querySelector(".name").addEventListener("click", () => smoothScroll(".cover"));
     document.querySelector(".aboutBtn").addEventListener("click", () => smoothScroll(".about"));
     document.querySelector(".workBtn").addEventListener("click", () => smoothScroll(".featured"));
     document.querySelector(".contactBtn").addEventListener("click", () => smoothScroll(".contact"));
+    hueRotate(name);
 }
