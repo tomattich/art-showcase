@@ -1,11 +1,11 @@
 header {
     z-index: 2;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.75fr;
     position: absolute;
     top: 0;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
+
     padding: 1vw;
     
     @media (max-width: 1080px) and (orientation: portrait) {
@@ -29,13 +29,13 @@ header {
 
 nav {
     display: flex;
-    gap: 1vw;
-    
+    align-self: center;
+    gap: 2vw;
     button {
         color: white;
-        font-size: 1vw;
+        font-size: 1.5vw;
         @media (max-width: 1080px) and (orientation: portrait) {
-            font-size: 4vw;
+            font-size: 3vw;
         }
     }
     div button:hover + .underline {
@@ -49,10 +49,9 @@ nav {
 }
 
 .name {
-    position: absolute;
-    font-size: 1vw;
-    top: 2vh;
-    left: 2vw;
+    align-self: flex-start;
+    font-size: 1.5vw;
+
     background: url("../images/text-bg2.png") center;
     -webkit-background-clip: text;
     background-clip: text;

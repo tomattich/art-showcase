@@ -25,7 +25,6 @@ footer {
 }
 
 .footerContainer {
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 5dvw;
@@ -92,7 +91,6 @@ footer {
     align-self: center;
     gap: 1.5dvh;
 }
-
 .footerNav h3 {
     font-size: 3dvw;
     margin-bottom: 1dvh;
