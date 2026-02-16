@@ -30,65 +30,78 @@ header {
         gap: 2vw;
     }
 }
+
 .menuBtnLines {
     display: none;
+
     @media (max-width: 1080px) and (orientation: portrait) {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        gap: .2rem;
+        gap: 0.7dvw;
     }
 }
-.menuBtnLinesActive{
-        margin-left: 10rem;
-        .menuBtnLine0 {
-            position: relative;
-            top: .4rem;
-            display: block;
-            rotate: 45deg;
-        }
-        .menuBtnLine1 {
+
+.menuBtnLinesActive {
+    margin-left: 15dvw;
+
+    .menuBtnLine0 {
+        position: relative;
+        top: 1dvw;
+        display: block;
+        rotate: 45deg;
+    }
+
+    .menuBtnLine1 {
         rotate: -45deg;
     }
+
     .menuBtnLine2 {
-       width: 6.1rem;
-       margin-left: 2.5rem;
-       margin-top: 2.6rem;
+        width: 25.15dvw;
+        margin-left: 2.75dvw;
+        margin-top: 10.9dvw;
 
     }
+
     .menuBtnLine3 {
-       width: 6.1rem;
-       margin-left: 2.5rem;
-       margin-top: 1.5rem;
+        width: 25.15dvw;
+        margin-left: 2.75dvw;
+        margin-top: 6.5dvw;
     }
+
     .menuBtnLine4 {
-       width: 6.1rem;
-       margin-left: 2.5rem;
-       margin-top: 1.5rem;
-       display: block;
+        width: 25.15dvw;
+        margin-left: 2.75dvw;
+        margin-top: 6.5dvw;
+        display: block;
     }
 
 }
+
 .menuBtnLine {
     position: relative;
-    border-radius: 1rem;
-    width: 1.5rem;
-    height: .2rem;
+    border-radius: 1.5dvw;
+    width: 4.25dvw;
+    height: 0.5dvw;
     background-color: white;
     transition: all 0.3s ease-in-out;
     justify-self: flex-start;
 }
+
 .menuBtnLine0 {
     display: none;
 }
+
 .menuBtnLine4 {
     display: none;
 }
+
 .menuBtn {
     position: absolute;
     top: 3dvw;
     display: none;
     right: 3dvw;
+
     @media (max-width: 1080px) and (orientation: portrait) {
         display: flex;
         width: fit-content;
