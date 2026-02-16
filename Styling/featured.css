@@ -20,7 +20,7 @@
     }
 
     h2 {
-        font-size: 5dvw;
+        font-size: 3dvw;
         transition: all .3s ease-in-out;
         background: url("../images/text-bg2.png") center;
         -webkit-background-clip: text;
@@ -61,12 +61,12 @@
 }
 
 .featuredContainer {
+    margin-top: 10rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
     gap: 1.5vw;
     width: 60%;
-    margin: 0;
     justify-items: center;
     @media (max-width: 1080px) and (orientation: portrait) {
         grid-template-columns: repeat(2, 1fr);

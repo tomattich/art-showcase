@@ -24,7 +24,7 @@
         }
     }
     h2 {
-        font-size: 5dvw ;
+        font-size: 3dvw ;
         transition: all .3s ease-in-out;
             background: url("../images/text-bg2.png") center;
             -webkit-background-clip: text;
@@ -48,7 +48,7 @@
             }
     }
     p {
-        font-size: 2dvw;
+        font-size: 1.5dvw;
         transition: all .3s ease-in-out;
         z-index: 1;
         position: relative;
@@ -118,7 +118,7 @@
 }
 
 .testingDivImgContainer1 {
-    background: url("../images/compressed_images/showcase9.jpg") center center/cover no-repeat;
+    background: url("../images/compressed_images/showcase19.jpg") center center/cover no-repeat;
     width: 35%;
     height: 20vw;
     @media (max-width: 1080px) and (orientation: portrait) {

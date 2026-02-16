@@ -142,5 +142,13 @@
         "date": "November 25, 2024",
         "description": "The numbers are rising.",
         "materials": "Ink pens on Bristol paper."
+    },
+    {
+        "image": "images/compressed_images/showcase19.jpg",
+        "expandedImage": "images/showcase19.jpg",
+        "title": "Grit",
+        "date": "February 11, 2026",
+        "description": "Fun idea.",
+        "materials": "ink pens & brushes"
     }
 ]

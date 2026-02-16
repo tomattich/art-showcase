@@ -57,6 +57,8 @@ main > section {
     box-shadow: 0 0 1dvw tomato;
     @media (max-width: 1080px) and (orientation: portrait) {
         display: none;
+        width: 5dvw;
+        height: 5dvw;
     }
 }
 section, footer {

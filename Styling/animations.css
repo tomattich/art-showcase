@@ -24,7 +24,7 @@
         transform: rotate(0deg); 
     }
     to { 
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
     }
 }
 
@@ -42,3 +42,24 @@
         transform: rotate(360deg);
     }
 }
+@keyframes slideInToLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutToRight {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+

@@ -47,7 +47,6 @@ export function contact() {
                     const planetRect = otherButton.getBoundingClientRect()
                     const planetCenterX = planetRect.left + planetRect.width / 2
                     const planetCenterY = planetRect.top + planetRect.height / 2
-
                     const deltaX = sunCenterX - planetCenterX
                     const deltaY = sunCenterY - planetCenterY
 

@@ -7,20 +7,98 @@ header {
     width: 100%;
 
     padding: 1vw;
-    
+
     @media (max-width: 1080px) and (orientation: portrait) {
         justify-content: space-between;
         padding: 1vw 2vw;
+
         button {
             font-size: 5vw;
         }
     }
 }
 
+.mobileMenu {
+    position: absolute;
+    right: 2dvw;
+    top: 10dvw;
+    display: none;
+
+    @media (max-width: 1080px) and (orientation: portrait) {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2vw;
+    }
+}
+.menuBtnLines {
+    display: none;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: .2rem;
+    }
+}
+.menuBtnLinesActive{
+        margin-left: 10rem;
+        .menuBtnLine0 {
+            position: relative;
+            top: .4rem;
+            display: block;
+            rotate: 45deg;
+        }
+        .menuBtnLine1 {
+        rotate: -45deg;
+    }
+    .menuBtnLine2 {
+       width: 6.1rem;
+       margin-left: 2.5rem;
+       margin-top: 2.6rem;
+
+    }
+    .menuBtnLine3 {
+       width: 6.1rem;
+       margin-left: 2.5rem;
+       margin-top: 1.5rem;
+    }
+    .menuBtnLine4 {
+       width: 6.1rem;
+       margin-left: 2.5rem;
+       margin-top: 1.5rem;
+       display: block;
+    }
+
+}
+.menuBtnLine {
+    position: relative;
+    border-radius: 1rem;
+    width: 1.5rem;
+    height: .2rem;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    justify-self: flex-start;
+}
+.menuBtnLine0 {
+    display: none;
+}
+.menuBtnLine4 {
+    display: none;
+}
+.menuBtn {
+    position: absolute;
+    top: 3dvw;
+    display: none;
+    right: 3dvw;
+    @media (max-width: 1080px) and (orientation: portrait) {
+        display: flex;
+        width: fit-content;
+    }
+}
+
 .underline {
     margin-top: .2vw;
     height: .1vw;
-    width: 0; 
+    width: 0;
     background-color: white;
     border: 0;
     transition: all 0.3s ease-in-out;
@@ -31,18 +109,22 @@ nav {
     display: flex;
     align-self: center;
     gap: 2vw;
+
     button {
         color: white;
         font-size: 1.5vw;
+
         @media (max-width: 1080px) and (orientation: portrait) {
             font-size: 3vw;
         }
     }
-    div button:hover + .underline {
-    width: 100%;
-    animation: renderLeftLine .3s ease-in-out;
-    filter: drop-shadow(0 0 .2vw white);
+
+    div button:hover+.underline {
+        width: 100%;
+        animation: renderLeftLine .3s ease-in-out;
+        filter: drop-shadow(0 0 .2vw white);
     }
+
     @media (max-width: 1080px) and (orientation: portrait) {
         display: none;
     }
@@ -59,20 +141,22 @@ nav {
     transition: all .3s ease-in-out;
     width: fit-content;
     font-weight: bold;
-        &::before {
-            content: "TomaTTich";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url("../images/text-bg2.png") center;
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-            transition: all .3s ease-in-out;
-            filter: blur(.2rem);
+
+    &::before {
+        content: "TomaTTich";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/text-bg2.png") center;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        transition: all .3s ease-in-out;
+        filter: blur(.2rem);
     }
+
     @media (max-width: 1080px) and (orientation: portrait) {
         font-size: 5vw;
     }
